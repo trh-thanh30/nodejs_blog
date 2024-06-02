@@ -2,9 +2,10 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "rsc/index.js",
   "scripts": {
-    "start": "node --watch index.js",
+    "start": "node --watch rsc/index.js",
+    "watch": "sass --embed-source-map --watch src/resources/scss/apps.scss rsc/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +23,12 @@
   },
   "homepage": "https://github.com/trh-thanh30/nodejs_blog#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.2"
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.2",
+    "sass": "^1.77.4"
   }
 }
